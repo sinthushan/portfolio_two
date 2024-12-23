@@ -1,0 +1,52 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+.container {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  background-color: #2a2a2a;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.record {
+  height: 20rem;
+  width: 20rem;
+  margin: 0;
+  position: absolute;
+  transition: 0.7s ease-in-out;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.record:hover {
+  cursor: pointer;
+  font-size: larger;
+  z-index: 999;
+  transform: rotate(0deg);
+  transform-origin: bottom right;
+}
+.record-blue {
+  background-image: url("/Home.png");
+  background-size: cover;
+  background-position: center;
+  transform: rotate(80deg);
+  transform-origin: bottom right;
+}
+
+.record-green {
+  background-image: url("/Projects.png");
+  background-size: cover;
+  background-position: center;
+  transform: rotate(-40deg);
+  transform-origin: bottom left;
+}
+
+.record-red {
+  background-image: url("/AboutMe.png");
+  background-size: cover;
+  background-position: center;
+  transform: rotate(5deg);
+  transform-origin: bottom right;
+}
